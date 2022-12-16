@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "short_name": "Rent Calc",
+  "name": "Rent Calculator",
+  "version": "1.0",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "action": {
+    "default_popup": "./popup/popup.html",
+    "default_icon" : "./images/house16.png"
+  },
+  "host_permissions": [
+    "https://developer.chrome.com/*"
+  ],
+
+  "permissions": [
+    "storage",
+    "tabGroups"
+
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
